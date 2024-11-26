@@ -1,12 +1,13 @@
 public class Otherchannel implements Observer{
 
-    NewsRoom newsRoom;
+    private String txt;
 
     public Otherchannel() {
-        newsRoom = new NewsRoom();
+        this.txt = "";
     }
 
     public void update(String txt) {
+        this.txt = txt;
         System.out.println("OtherChannel: " + txt);
     }
 

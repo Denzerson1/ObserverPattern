@@ -1,12 +1,13 @@
 public class Webchannel implements Observer {
 
-    private NewsRoom subject;
+    String txt;
 
     public Webchannel() {
-        this.subject = new NewsRoom();
+        this.txt = "";
     }
 
     public void update(String txt) {
+        this.txt = txt;
         System.out.println("Webchannel: " + txt);
     }
 }
